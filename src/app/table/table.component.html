@@ -1,0 +1,8 @@
+<div>
+    <input type="text" #product placeholder="Product Name">
+    <input type="number" #price placeholder="Price">
+  
+    <button (click)="addToStore(product.value, price.value)">Add to Table</button>
+</div>
+
+{{content|async|json}}
